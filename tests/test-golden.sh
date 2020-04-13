@@ -8,7 +8,7 @@ cd "${TEST_DIR}"
 test () {
   echo ""
   echo "___ Testing ${TEST_DIR}/$1.yaml ___"
-  npm start ${TEST_DIR}/$1.yaml > ./$1.stdout.log 2> ./$1.stderr.log
+  $(npm bin)/ts-node ../src/main.ts $1.yaml > ./$1.stdout.log 2> ./$1.stderr.log
 
   # Now, let's compare the output with the golden file (i.e. expected output)
   git --no-pager diff $1.*.log

@@ -1,7 +1,3 @@
-
-> yaml-student-grading@1.0.0 start /Users/adrienjoly/dev/adrienjoly/yaml-student-grading
-> ts-node src/main.ts "./tests/sample-grading.yaml"
-
 [
   { name: 'Étudiant 1', score: 12, maxScore: 15 },
   { name: 'Étudiant 2', score: 8, maxScore: 15 },
