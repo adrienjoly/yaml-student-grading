@@ -16,6 +16,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^13.11.1",
+    "@types/yaml": "^1.2.0",
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.27.0",
     "ava": "^3.7.0",
@@ -29,5 +30,8 @@
   },
   "prettier": {
     "singleQuote": true
+  },
+  "dependencies": {
+    "yaml": "^1.8.3"
   }
 }

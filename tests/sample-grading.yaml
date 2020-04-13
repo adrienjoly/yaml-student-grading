@@ -1,0 +1,138 @@
+groupes:
+  - nom: Étudiant 1
+
+    critère-collab:
+      tous-contribué: false
+      équilibre: false
+
+    critère-prod: true
+
+    critère-lisib:
+      erreurs-eslint: 29
+      warnings-eslint: 12
+      pas-fichiers-inutiles: true
+      readme-install: true
+      tests-fournis: true # dans README
+      pas-duplication-code: true
+
+    tests-pct: 100 # tous les tests passent, deux fois d'affilée.
+    critère-fonct:
+      nom-bdd: true
+      urls-endpoints: true
+      format-réponses: true
+      env-mongo-uri: true
+      last-updated-at: true
+      tout-asynchrone: false
+      token-en-base64: true
+      env-jwt-secret: true
+
+  - nom: Étudiant 2
+
+    critère-collab:
+      tous-contribué: false
+      équilibre: false
+
+    critère-prod: true
+
+    critère-lisib:
+      erreurs-eslint: 70
+      warnings-eslint: 9
+      tests-fournis: true
+      readme-install: true
+      pas-duplication-code: false
+      pas-fichiers-inutiles: true
+
+    tests-pct:
+      100
+      # tous les tests passent, deux fois d'affilée
+      # ...après avoir changé le nom `server-api` en `server`
+    critère-fonct:
+      nom-bdd: false
+      urls-endpoints: true
+      format-réponses: true
+      env-mongo-uri: true
+      last-updated-at: false
+      token-en-base64: false
+      tout-asynchrone: false
+      env-jwt-secret: true
+
+  - nom: Étudiant 3
+
+    critère-collab:
+      tous-contribué: true
+      équilibre: true
+
+    critère-prod: true
+
+    critère-lisib:
+      erreurs-eslint: 391
+      warnings-eslint: 32
+      readme-install: false
+      tests-fournis: false
+      pas-fichiers-inutiles: false
+      pas-duplication-code: false
+
+    tests-pct: 68
+    critère-fonct:
+      nom-bdd: true
+      urls-endpoints: true
+      format-réponses: false
+      env-mongo-uri: false
+      env-jwt-secret: false
+      last-updated-at: false
+      token-en-base64: false
+      tout-asynchrone: false
+
+  - nom: Étudiant 4
+
+    critère-collab:
+      tous-contribué: true
+      équilibre: true
+
+    critère-prod: true
+
+    critère-lisib:
+      erreurs-eslint: 266
+      warnings-eslint: 26
+      readme-install: true
+      tests-fournis: false
+      pas-fichiers-inutiles: true
+      pas-duplication-code: true
+
+    tests-pct: 33
+    critère-fonct:
+      urls-endpoints: false
+      last-updated-at: false
+      env-jwt-secret: true
+      nom-bdd: true
+      env-mongo-uri: true
+      tout-asynchrone: false
+      token-en-base64: false
+      format-réponses: true
+
+  - nom: Étudiant 5
+
+    critère-collab:
+      tous-contribué: true
+      équilibre: true
+
+    critère-prod: true
+
+    critère-lisib:
+      erreurs-eslint: 1682
+      warnings-eslint: 51
+      pas-duplication-code: false
+      tests-fournis: true
+      readme-install: true
+      pas-fichiers-inutiles: false
+
+    tests-pct: 100
+    critère-fonct:
+      nom-bdd: true
+      urls-endpoints: true
+      format-réponses: true
+      env-mongo-uri: true
+      last-updated-at: true
+      env-jwt-secret: false
+      token-en-base64: false
+      tout-asynchrone: false
