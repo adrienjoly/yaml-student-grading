@@ -1,6 +1,6 @@
-# vscode-nodejs-typescript-eslint-prettier-ava-boilerplate
+# yaml-student-grading
 
-A template for TypeScript-based Node.js projects with modern linting, formatting and testing for Visual Studio Code.
+A toolkit to grade student assignments consistently, using yaml files.
 
 ## Usage
 
