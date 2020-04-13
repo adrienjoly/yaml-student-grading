@@ -2,10 +2,14 @@
 
 A toolkit to grade student assignments consistently, using yaml files.
 
-## Usage
+## Setup and usage
 
-1. Fork this repository
-2. Clone your forked repository
-3. `$ nvm use`, to setup the version of Node.js specified in `.nvmrc`
-4. `$ npm install`
-5. `$ npm test`
+```sh
+$ git clone https://github.com/adrienjoly/yaml-student-grading.git
+$ cd yaml-student-grading
+$ nvm use # to setup the version of Node.js specified in `.nvmrc`
+$ npm install
+$ npm run build
+$ npm link # so you can run the grade command from anywhere
+$ grade tests/sample-grading.yaml
+```

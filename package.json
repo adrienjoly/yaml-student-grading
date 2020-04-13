@@ -5,10 +5,14 @@
   "repository": {
     "url": "https://github.com/adrienjoly/vscode-nodejs-typescript-eslint-prettier-ava-boilerplate"
   },
-  "main": "src/main.ts",
+  "main": "./lib/main.js",
+  "bin": {
+    "grade": "./lib/main.js"
+  },
   "scripts": {
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint src/**/*.ts --fix",
+    "build": "tsc -p .",
     "start": "ts-node src/main.ts",
     "test:e2e": "./tests/test-golden.sh",
     "test": "ava-ts && npm run test:e2e"

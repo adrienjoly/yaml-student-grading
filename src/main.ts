@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import fs from 'fs';
 import YAML from 'yaml';
 import { scoreRecur, defaultBoolScorer, scoreMaximizer } from './scoring';
