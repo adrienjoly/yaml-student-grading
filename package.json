@@ -14,8 +14,9 @@
     "lint:fix": "eslint src/**/*.ts --fix",
     "build": "tsc -p .",
     "start": "ts-node src/main.ts",
+    "test:unit": "ava-ts",
     "test:e2e": "./tests/test-golden.sh",
-    "test": "ava-ts && npm run test:e2e"
+    "test": "npm run test:unit && npm run test:e2e"
   },
   "author": "Adrien Joly",
   "license": "MIT",
