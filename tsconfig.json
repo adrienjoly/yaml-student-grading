@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "typeRoots": ["./node_modules/@types", "./typings"]
+  },
+  "compileOnSave": true,
+  "include": ["./src"]
+}

@@ -7,29 +7,17 @@
   },
   "main": "src/main.ts",
   "scripts": {
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
     "start": "ts-node src/main.ts",
     "test": "ava-ts"
   },
   "author": "Adrien Joly",
   "license": "MIT",
-  "eslintConfig": {
-    "extends": [
-      "plugin:prettier/recommended"
-    ],
-    "plugins": [
-      "prettier"
-    ],
-    "parserOptions": {
-      "ecmaVersion": 2019
-    },
-    "rules": {
-      "prettier/prettier": "error"
-    },
-    "env": {
-      "node": true
-    }
-  },
   "devDependencies": {
+    "@types/node": "^13.11.1",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
     "ava": "^3.7.0",
     "ava-ts": "^0.25.2",
     "eslint": "^6.8.0",
